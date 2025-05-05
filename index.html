@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orçamento Imediato para Aquecimento de Piscina | Brasão Aquecedores</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orçamento Imediato | Brasão Aquecedores</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
       background: #f9f9f9;
       color: #222;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     header {
@@ -29,7 +34,6 @@
 
     .hero h1 {
       font-size: 24px;
-      margin-bottom: 10px;
     }
 
     .hero p {
@@ -97,9 +101,18 @@
       cursor: pointer;
     }
 
+    .comparativo {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
     .comparativo ul {
       list-style: none;
       padding-left: 0;
+      flex: 1;
+      min-width: 200px;
     }
 
     .comparativo .bons::before {
@@ -136,88 +149,90 @@
   </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <img src="https://i.postimg.cc/8s8fnhRC/3.jpg" alt="Brasão Aquecedores">
+    </header>
 
-<header>
-  <img src="https://i.postimg.cc/8s8fnhRC/3.jpg" alt="Brasão Aquecedores">
-</header>
+    <section class="hero">
+      <h1>Orçamento Imediato para Aquecimento de Piscina</h1>
+      <p>Receba um orçamento com instalação profissional em até 24h. Atendemos toda São Paulo, litoral e interior com equipe própria.</p>
+      <a href="https://wa.me/5511962525073" target="_blank">FALAR COM ESPECIALISTA AGORA</a>
+    </section>
 
-<section class="hero">
-  <h1>Orçamento Imediato para Aquecimento de Piscina</h1>
-  <p>Receba um orçamento com instalação profissional em até 24h. Atendemos toda São Paulo, litoral e interior com equipe própria.</p>
-  <a href="https://wa.me/5511962525073" target="_blank">FALAR COM ESPECIALISTA AGORA</a>
-</section>
+    <section class="section box">
+      <h2>Quem Somos</h2>
+      <p>Somos a <strong>Brasão Aquecedores LTDA</strong>, empresa especializada em aquecimento de piscina com soluções que unem conforto térmico, economia real e instalação segura. Atuamos com foco em qualidade técnica e suporte imediato.</p>
+      <p>Entregamos soluções sob medida, com garantia e nota fiscal, atendendo condomínios, residências, chácaras, pousadas e clubes. Nossos técnicos passam por atualização contínua para oferecer o melhor resultado sem dor de cabeça.</p>
+    </section>
 
-<section class="section box">
-  <h2>Quem Somos</h2>
-  <p>Somos a <strong>Brasão Aquecedores LTDA</strong>, empresa especializada em aquecimento de piscina com soluções que unem conforto térmico, economia real e instalação segura. Atuamos com foco em qualidade técnica e suporte imediato.</p>
-  <p>Entregamos soluções sob medida, com garantia e nota fiscal, atendendo condomínios, residências, chácaras, pousadas e clubes. Nossos técnicos passam por atualização contínua para oferecer o melhor resultado sem dor de cabeça.</p>
-</section>
+    <section class="section box">
+      <h2>Antes e Depois</h2>
+      <div class="fotos">
+        <div>
+          <img src="https://i.postimg.cc/BnXRCHhF/2.jpg" alt="Antes">
+          <p><strong>ANTES</strong></p>
+        </div>
+        <div>
+          <img src="https://i.postimg.cc/x8ptkFV4/1.jpg" alt="Depois">
+          <p><strong>DEPOIS</strong></p>
+        </div>
+      </div>
+    </section>
 
-<section class="section box">
-  <h2>Antes e Depois</h2>
-  <div class="fotos">
-    <div>
-      <img src="https://i.postimg.cc/BnXRCHhF/2.jpg" alt="Antes">
-      <p><strong>ANTES</strong></p>
-    </div>
-    <div>
-      <img src="https://i.postimg.cc/x8ptkFV4/1.jpg" alt="Depois">
-      <p><strong>DEPOIS</strong></p>
-    </div>
+    <section class="section box">
+      <h2>Depoimentos Reais</h2>
+      <p>“Sou técnico em aquecedores a gás. Quando comprei meu trocador de calor, recebi orientação da Komeco para não instalar por conta própria e procurar a Brasão. Atendimento técnico, com garantia e confiança.”<br>
+        — Marcos T., Ilha Comprida – SP</p>
+      <p>“Depois da instalação da Brasão, minha piscina ficou perfeita. Antes a gente evitava entrar por causa da água gelada, hoje virou parte da nossa rotina. Atendimento 10!”<br>
+        — Ana C., Tatuapé – SP</p>
+      <p>“Com o plano de redução da Brasão Aquecedores, consegui baixar em mais de 70% o custo mensal de aquecimento do meu hotel. Além da economia, agora ofereço conforto térmico aos hóspedes o ano todo.”<br>
+        — Roberto G., Hotel Vila Azul – Riviera – SP</p>
+    </section>
+
+    <section class="section box" style="background:#f2f2f2;">
+      <h2>Solicite seu Orçamento!</h2>
+      <form action="https://wa.me/5511962525073" method="get" target="_blank">
+        <input type="text" name="nome" placeholder="Nome completo" required>
+        <input type="text" name="whatsapp" placeholder="WhatsApp com DDD" required>
+        <input type="text" name="bairro" placeholder="Cidade / Bairro" required>
+        <input type="text" name="endereco" placeholder="Endereço completo">
+        <input type="text" name="cep" placeholder="CEP">
+        <input type="text" name="medidas" placeholder="Medidas da piscina (C x L x P)">
+        <input type="text" name="litros" placeholder="Litros estimados (se souber)">
+        <textarea name="obs" placeholder="Observações adicionais..." rows="4"></textarea>
+        <button type="submit">SOLICITAR AGORA</button>
+        <p style="margin-top:20px; font-size:16px; font-weight:bold; color:#333; text-align:center;">
+          Instalação com <strong>garantia técnica</strong>, <strong>nota fiscal</strong> e <strong>equipe especializada</strong>. Atendemos com segurança e pontualidade.
+        </p>
+      </form>
+    </section>
+
+    <section class="section box comparativo">
+      <div>
+        <h3>Brasão Aquecedores</h3>
+        <ul>
+          <li class="bons">Garantia real com nota fiscal</li>
+          <li class="bons">Instalação técnica certificada</li>
+          <li class="bons">Suporte imediato e pós-venda</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Outros Vendedores</h3>
+        <ul>
+          <li class="ruins">Sem garantia</li>
+          <li class="ruins">Instalação por conta própria</li>
+          <li class="ruins">Sem suporte técnico</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      Brasão Aquecedores LTDA – Loja Física: R. Pedro Bonilha, 119 Piqueri – São Paulo/SP<br>
+      Autorizada das Maiores Marcas do Brasil: <span style="font-weight:bold; color:#007bff">Komeco</span>, <span style="font-weight:bold; color:#007bff">Rheem</span>, <span style="font-weight:bold; color:#007bff">Jelly-Fish</span>, <span style="font-weight:bold; color:#007bff">Heliotek</span>, <span style="font-weight:bold; color:#007bff">Sodramar</span>, <span style="font-weight:bold; color:#007bff">Industek</span> e outras.
+    </footer>
   </div>
-</section>
 
-<section class="section box">
-  <h2>Depoimentos Reais</h2>
-  <p>“Sou técnico em aquecedores a gás. Quando comprei meu trocador de calor, recebi orientação da Komeco para não instalar por conta própria e procurar a Brasão. Atendimento técnico, com garantia e confiança.”<br>
-  — Marcos T., Ilha Comprida – SP</p>
-  <p>“Depois da instalação da Brasão, minha piscina ficou perfeita. Antes a gente evitava entrar por causa da água gelada, hoje virou parte da nossa rotina. Atendimento 10!”<br>
-  — Ana C., Tatuapé – SP</p>
-  <p>“Com o plano de redução da Brasão Aquecedores, consegui baixar em mais de 70% o custo mensal de aquecimento do meu hotel. Além da economia, agora ofereço conforto térmico aos hóspedes o ano todo.”<br>
-  — Roberto G., Hotel Vila Azul – Riviera – SP</p>
-</section>
-
-<section class="section box" style="background:#f2f2f2;">
-  <h2>Solicite seu Orçamento!</h2>
-  <form action="https://wa.me/5511962525073" method="get" target="_blank">
-    <input type="text" name="nome" placeholder="Nome completo" required>
-    <input type="text" name="whatsapp" placeholder="WhatsApp com DDD" required>
-    <input type="text" name="bairro" placeholder="Cidade / Bairro" required>
-    <input type="text" name="endereco" placeholder="Endereço completo">
-    <input type="text" name="cep" placeholder="CEP">
-    <input type="text" name="medidas" placeholder="Medidas da piscina (C x L x P)">
-    <input type="text" name="litros" placeholder="Litros estimados (se souber)">
-    <textarea name="obs" placeholder="Observações adicionais..." rows="4"></textarea>
-    <button type="submit">SOLICITAR AGORA</button>
-    <p style="margin-top:15px; font-size:13px; color:#555; text-align:center;">
-      Instalação com <strong>garantia técnica</strong>, <strong>nota fiscal</strong> e <strong>equipe especializada</strong>. Atendemos com segurança e pontualidade.
-    </p>
-  </form>
-</section>
-
-<section class="section box comparativo">
-  <h2>Comparativo</h2>
-  <ul>
-    <li class="bons">Garantia real com nota fiscal</li>
-    <li class="bons">Instalação técnica certificada</li>
-    <li class="bons">Suporte imediato e pós-venda</li>
-  </ul>
-  <ul>
-    <li class="ruins">Sem garantia</li>
-    <li class="ruins">Instalação por conta própria</li>
-    <li class="ruins">Sem suporte técnico</li>
-  </ul>
-</section>
-
-<footer>
-  Brasão Aquecedores LTDA – Loja Física: R. Pedro Bonilha, 119 Piqueri – São Paulo/SP<br>
-  Autorizada das Maiores Marcas do Brasil: <span style="font-weight:bold; color:#007bff">Komeco</span>, <span style="font-weight:bold; color:#007bff">Rheem</span>, <span style="font-weight:bold; color:#007bff">Jelly-Fish</span>, <span style="font-weight:bold; color:#007bff">Heliotek</span>, <span style="font-weight:bold; color:#007bff">Sodramar</span>, <span style="font-weight:bold; color:#007bff">Industek</span> e outras.
-</footer>
-
-<a href="https://wa.me/5511989310235" class="whatsapp-fixed" target="_blank">Fale no WhatsApp</a>
-
+  <a href="https://wa.me/5511962525073" class="whatsapp-fixed" target="_blank">Fale no WhatsApp</a>
 </body>
 </html>
-
-
-
