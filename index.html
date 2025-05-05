@@ -1,54 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aqueça sua piscina com técnicos autorizados das maiores fabricantes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aqueça sua piscina com profissionais de confiança autorizados pelas maiores fabricantes do Brasil</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #222; }
-    header { background: #fff; padding: 20px; text-align: center; border-bottom: 2px solid #eee; }
-    header img { height: 140px; }
-    h1, h2 { text-align: center; margin: 20px 10px; }
-    .hero { background: #e0f7fa; padding: 40px 20px; text-align: center; }
-    .hero p { font-size: 18px; margin-top: 10px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #eee;
+    }
+    header img {
+      height: 120px;
+    }
+    h1, h2 {
+      margin: 20px 0 10px;
+      text-align: center;
+    }
+    .hero {
+      text-align: center;
+      padding: 30px 20px;
+      background: #e0f7fa;
+    }
     .hero button {
-      background: #ff5722; color: #fff; padding: 15px 25px;
-      font-size: 18px; border: none; border-radius: 5px;
-      cursor: pointer; margin-top: 20px;
+      background: #ff5722;
+      color: #fff;
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 15px;
     }
-    .section { max-width: 1000px; margin: auto; padding: 30px 20px; }
+    .section {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
     .box {
-      background: #fff; padding: 25px; border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
     }
-    ul { list-style: none; padding-left: 0; }
-    li::before { content: '✔️ '; color: green; }
-    .comparativo .outros li::before { content: '❌ '; color: red; }
-    .fotos { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .fotos div { text-align: center; }
-    .fotos img { max-width: 100%; height: auto; border-radius: 8px; }
-    .label { margin-top: 8px; font-weight: bold; }
+    .comparativo ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .comparativo li {
+      margin-bottom: 10px;
+    }
+    .comparativo li::before {
+      content: '▣ ';
+      color: #555;
+    }
+    .comparativo .outros li::before {
+      content: '▢ ';
+      color: #999;
+    }
+    .fotos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .fotos img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .label {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .depoimentos {
+      border-left: 3px solid #00acc1;
+      padding-left: 15px;
+      margin: 10px 0;
+      font-style: italic;
+    }
     footer {
-      background: #eee; text-align: center; padding: 20px;
+      text-align: center;
       font-size: 13px;
+      padding: 20px;
+      background: #eee;
     }
     .whatsapp-fixed {
-      position: fixed; bottom: 20px; right: 20px;
-      background: #25d366; color: #fff;
-      padding: 12px 18px; font-size: 16px;
-      border-radius: 50px; text-decoration: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: #fff;
+      padding: 12px 18px;
+      font-size: 16px;
+      border-radius: 50px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      text-decoration: none;
       z-index: 1000;
-    }
-    input, textarea {
-      width: 100%; padding: 10px;
-      margin-bottom: 10px; border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button[type="submit"] {
-      background: #ff5722; color: white;
-      padding: 12px 25px; border: none;
-      border-radius: 5px; font-size: 16px;
     }
   </style>
 </head>
@@ -60,89 +117,68 @@
 
 <section class="hero">
   <h1>Sua piscina está fria e esquecida?</h1>
-  <p>Somos técnicos autorizados pelas maiores fabricantes: <strong>Komeco, Heliotek, Sodramar, Rheem, Jelly-Fish, Rinnai</strong> e outras líderes do mercado.</p>
-  <p>Famílias estão economizando até R$ 380/mês com aquecimento profissional da Brasão.</p>
+  <p>Descubra como famílias estão economizando até R$ 380/mês com aquecimento profissional da Brasão.</p>
   <button onclick="window.location.href='https://wa.me/5511962525073'">QUERO MINHA PISCINA QUENTE AGORA</button>
 </section>
 
-<section class="section">
-
-  <div class="box">
-    <h2>Por que escolher a Brasão Aquecedores?</h2>
-    <ul>
-      <li>Equipe própria e qualificada</li>
-      <li>Instalação limpa com nota fiscal</li>
-      <li>Atendimento rápido em SP, interior e litoral</li>
-      <li>Garantia técnica e suporte pós-venda</li>
-    </ul>
-  </div>
-
-  <div class="box comparativo">
-    <h2>Comparativo</h2>
-    <ul>
-      <li>Garantia real com nota fiscal</li>
-      <li>Instalação técnica certificada</li>
-      <li>Suporte imediato e pós-venda</li>
-    </ul>
-    <div class="outros">
-      <ul>
-        <li>Sem garantia</li>
-        <li>Instalação por conta própria</li>
-        <li>Sem suporte técnico</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="box">
-    <h2>Antes e Depois da Instalação</h2>
-    <div class="fotos">
-      <div>
-        <img src="https://i.postimg.cc/BnXRCHhF/2.jpg" alt="Antes da Instalação">
-        <div class="label">ANTES</div>
-      </div>
-      <div>
-        <img src="https://i.postimg.cc/x8ptkFV4/1.jpg" alt="Depois da Instalação">
-        <div class="label">DEPOIS</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="box">
-    <h2>O que dizem nossos clientes</h2>
-    <blockquote style="margin-bottom:15px; border-left: 4px solid #ff5722; padding-left: 10px;">
-      “Minha piscina estava sempre fria. Agora está sempre pronta para uso. Serviço rápido e limpo!”
-      <br><strong>— Rodrigo S., Mooca - SP</strong>
-    </blockquote>
-    <blockquote style="margin-bottom:15px; border-left: 4px solid #ff5722; padding-left: 10px;">
-      “Equipe profissional, chegaram no horário e entregaram tudo como prometido. Recomendo demais.”
-      <br><strong>— Fernanda L., Campinas - SP</strong>
-    </blockquote>
-    <blockquote style="border-left: 4px solid #ff5722; padding-left: 10px;">
-      “Me explicaram tudo, o atendimento foi excelente. Com certeza chamarei novamente.”
-      <br><strong>— Eduardo M., São Vicente - SP</strong>
-    </blockquote>
-  </div>
-
-  <div class="box">
-    <h2>Solicite seu Orçamento</h2>
-    <form action="https://formsubmit.co/seu-email@email.com" method="POST">
-      <input type="text" name="nome" placeholder="Nome completo" required>
-      <input type="text" name="cep" placeholder="CEP" required>
-      <input type="text" name="endereco" placeholder="Endereço" required>
-      <input type="text" name="regiao" placeholder="Região" required>
-      <input type="text" name="volume" placeholder="Volume da piscina (litros)" required>
-      <button type="submit">Enviar Orçamento</button>
-    </form>
-  </div>
-
+<section class="section box">
+  <h2>Por que escolher a Brasão Aquecedores?</h2>
+  <ul>
+    <li>Equipe própria e qualificada</li>
+    <li>Instalação limpa e com garantia</li>
+    <li>Economia real de energia</li>
+    <li>Atendimento em SP, interior e litoral</li>
+  </ul>
 </section>
 
-<a class="whatsapp-fixed" href="https://wa.me/5511962525073" target="_blank">Fale no WhatsApp</a>
+<section class="section box comparativo">
+  <h2>Comparativo</h2>
+  <ul>
+    <li>Garantia real com nota fiscal</li>
+    <li>Instalação técnica certificada</li>
+    <li>Suporte imediato e pós-venda</li>
+  </ul>
+  <div class="outros">
+    <ul>
+      <li>Sem garantia</li>
+      <li>Instalação por conta própria</li>
+      <li>Sem suporte técnico</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section box">
+  <h2>Antes e Depois da Instalação</h2>
+  <div class="fotos">
+    <div>
+      <img src="https://i.postimg.cc/BnXRCHhF/2.jpg" alt="Antes da Instalação">
+      <div class="label">ANTES</div>
+    </div>
+    <div>
+      <img src="https://i.postimg.cc/x8ptkFV4/1.jpg" alt="Depois da Instalação">
+      <div class="label">DEPOIS</div>
+    </div>
+  </div>
+</section>
+
+<section class="section box">
+  <h2>Depoimentos Reais</h2>
+  <div class="depoimentos">
+    “Depois que a Brasão instalou o trocador de calor 100% dimensionado, minha esposa — que não entrava há anos — voltou a aproveitar. As crianças agora usam com liberdade. Hoje, a piscina virou nosso espaço favorito.”
+    <br>— Fernando A., Pirituba – SP
+  </div>
+  <div class="depoimentos">
+    “Com o plano da Brasão, consegui baixar em mais de 70% o custo de aquecimento do meu hotel. Agora ofereço conforto térmico aos hóspedes o ano todo.”
+    <br>— Roberto G., Riviera – SP
+  </div>
+</section>
 
 <footer>
-  Brasão Aquecedores | CNPJ: 43.423.462/0001-24<br>
-  Autorizada das maiores marcas: Komeco, Jelly-Fish, Heliotek, Rinnai, Rheem, Sodramar.
+  Brasão Aquecedores | CNPJ: 43.423.462/0001-24
 </footer>
+
+<a class="whatsapp-fixed" href="https://wa.me/5511962525073" target="_blank">Fale com um Especialista</a>
 
 </body>
 </html>
+
