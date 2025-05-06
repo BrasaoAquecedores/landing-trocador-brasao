@@ -190,40 +190,46 @@
         — Roberto G., Hotel Vila Azul – Riviera – SP</p>
     </section>
 
-    <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "brasao.aquecedores@gmail.com";
-    $subject = "Novo orçamento pelo site";
+  <form onsubmit="enviarWhatsApp(); return false;">
+  <input type="text" id="nome" placeholder="Nome completo" required>
+  <input type="text" id="whatsapp" placeholder="WhatsApp com DDD" required>
+  <input type="text" id="endereco" placeholder="Endereço completo" required>
+  <input type="text" id="bairro" placeholder="Cidade / Bairro">
+  <input type="text" id="cep" placeholder="CEP">
+  <input type="text" id="medidas" placeholder="Medidas da piscina (C x L x P)">
+  <input type="text" id="litros" placeholder="Litros estimados (se souber)">
+  <textarea id="observacoes" placeholder="Observações adicionais..." rows="4"></textarea>
+  <button type="submit">SOLICITAR AGORA</button>
+</form>
 
-    $nome = $_POST["nome"];
-    $whatsapp = $_POST["whatsapp"];
-    $endereco = $_POST["endereco"];
-    $bairro = $_POST["bairro"];
-    $cep = $_POST["cep"];
-    $medidas = $_POST["medidas"];
-    $litros = $_POST["litros"];
-    $observacoes = $_POST["observacoes"];
+<script>
+  function enviarWhatsApp() {
+    const nome = document.getElementById('nome').value;
+    const whatsapp = document.getElementById('whatsapp').value;
+    const endereco = document.getElementById('endereco').value;
+    const bairro = document.getElementById('bairro').value;
+    const cep = document.getElementById('cep').value;
+    const medidas = document.getElementById('medidas').value;
+    const litros = document.getElementById('litros').value;
+    const observacoes = document.getElementById('observacoes').value;
 
-    $mensagem = "Nome: $nome\n";
-    $mensagem .= "WhatsApp: $whatsapp\n";
-    $mensagem .= "Endereço: $endereco\n";
-    $mensagem .= "Cidade/Bairro: $bairro\n";
-    $mensagem .= "CEP: $cep\n";
-    $mensagem .= "Medidas da piscina: $medidas\n";
-    $mensagem .= "Litros estimados: $litros\n";
-    $mensagem .= "Observações adicionais: $observacoes\n";
+    const mensagem = `*Novo orçamento solicitado:*
+👤 Nome: ${nome}
+📞 WhatsApp: ${whatsapp}
+🏠 Endereço: ${endereco}
+📍 Bairro: ${bairro}
+📬 CEP: ${cep}
+🏊‍♂️ Medidas: ${medidas}
+💧 Litros: ${litros}
+📝 Observações: ${observacoes}`;
 
-    $headers = "From: brasao.aquecedores@gmail.com\r\n";
-    $headers .= "Reply-To: brasao.aquecedores@gmail.com\r\n";
+    const numeroDestino = '5511962525073';
+    const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensagem)}`;
 
-    if (mail($to, $subject, $mensagem, $headers)) {
-        header("Location: https://wa.me/5511962525073?text=Ol%C3%A1!+Acabei+de+preencher+o+formul%C3%A1rio+no+site+e+gostaria+de+solicitar+meu+or%C3%A7amento.");
-        exit();
-    } else {
-        echo "<h3>Erro ao enviar. Tente novamente mais tarde.</h3>";
-    }
-}
-?>
+    window.open(url, '_blank');
+  }
+</script>
+
 
 
     <section class="section box comparativo">
