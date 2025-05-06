@@ -218,31 +218,49 @@
 </form>
 
 <script>
-  function enviarWhatsApp() {
-    const nome = document.getElementById('nome').value;
-    const whatsapp = document.getElementById('whatsapp').value;
-    const endereco = document.getElementById('endereco').value;
-    const bairro = document.getElementById('bairro').value;
-    const cep = document.getElementById('cep').value;
-    const medidas = document.getElementById('medidas').value;
-    const litros = document.getElementById('litros').value;
-    const observacoes = document.getElementById('observacoes').value;
+ <form onsubmit="enviarWhatsApp(); return false;">
+  <input type="text" id="nome" placeholder="Nome completo" required>
+  <input type="text" id="whatsapp" placeholder="WhatsApp com DDD" required>
+  <input type="text" id="endereco" placeholder="Endereço completo" required>
+  <input type="text" id="bairro" placeholder="Cidade / Bairro">
+  <input type="text" id="cep" placeholder="CEP">
+  <input type="text" id="medidas" placeholder="Medidas da piscina (C x L x P)">
+  <input type="text" id="litros" placeholder="Litros estimados (se souber)">
+  <textarea id="observacoes" placeholder="Observações adicionais..." rows="4"></textarea>
+  <button type="submit">SOLICITAR AGORA</button>
+  <p style="margin-top:20px; font-size:16px; font-weight:bold; color:#333; text-align:center;">
+    Instalação com <strong>garantia técnica</strong>, <strong>nota fiscal</strong> e <strong>equipe especializada</strong>. Atendemos com segurança e pontualidade.
+  </p>
+</form>
 
-    const msg = `*Novo orçamento solicitado:*
-👤 Nome: ${nome}
+<script>
+  function enviarWhatsApp() {
+    const nome = document.getElementById('nome').value.trim();
+    const whatsapp = document.getElementById('whatsapp').value.trim();
+    const endereco = document.getElementById('endereco').value.trim();
+    const bairro = document.getElementById('bairro').value.trim();
+    const cep = document.getElementById('cep').value.trim();
+    const medidas = document.getElementById('medidas').value.trim();
+    const litros = document.getElementById('litros').value.trim();
+    const observacoes = document.getElementById('observacoes').value.trim();
+
+    const mensagem = `Olá, gostaria de solicitar um orçamento para aquecimento de piscina:
+
+🧍 Nome: ${nome}
 📞 WhatsApp: ${whatsapp}
 🏠 Endereço: ${endereco}
 📍 Bairro: ${bairro}
-📬 CEP: ${cep}
-🏊‍♂️ Medidas: ${medidas}
+📦 CEP: ${cep}
+📐 Medidas da piscina: ${medidas}
 💧 Litros: ${litros}
 📝 Observações: ${observacoes}`;
 
     const numero = "5511989310235";
-    const link = `https://wa.me/${numero}?text=${encodeURIComponent(msg)}`;
-    window.open(link, '_blank');
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
   }
 </script>
+
 
     <section class="section box comparativo">
       <div>
