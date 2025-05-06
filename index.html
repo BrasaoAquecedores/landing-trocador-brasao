@@ -85,6 +85,20 @@
       border-radius: 8px;
     }
 
+    .depoimento {
+      background: #e3f2fd;
+      border-left: 4px solid #2196f3;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .depoimento strong {
+      color: #1976d2;
+      display: block;
+      margin-top: 10px;
+    }
+
     form input, form textarea {
       width: 100%;
       padding: 10px;
@@ -182,34 +196,22 @@
 
     <section class="section box">
       <h2>Depoimentos Reais</h2>
-      
-      <div style="background: #e0ffe0; border-left: 5px solid #4caf50; padding: 20px; margin-bottom: 20px; border-radius: 8px;">
-        <p style="font-size: 16px; line-height: 1.6;">
-          “Sou técnico em aquecedores a gás. Quando comprei meu trocador de calor, recebi orientação da Komeco para não instalar por conta própria e procurar a Brasão. Atendimento técnico, com garantia e confiança.”
-        </p>
-        <p style="font-weight: bold; color: #333;">— Marcos T., Ilha Comprida – SP</p>
+
+      <div class="depoimento">
+        <p>“Sou técnico em aquecedores a gás. Quando comprei meu trocador de calor, recebi orientação da Komeco para não instalar por conta própria e procurar a Brasão. Atendimento técnico, com garantia e confiança.”</p>
+        <strong>— Marcos T., Ilha Comprida – SP</strong>
       </div>
 
-      <div style="background: #e0f7fa; border-left: 5px solid #00acc1; padding: 20px; margin-bottom: 20px; border-radius: 8px;">
-        <p style="font-size: 16px; line-height: 1.6;">
-          “Depois da instalação da Brasão, minha piscina ficou perfeita. Antes a gente evitava entrar por causa da água gelada, hoje virou parte da nossa rotina. Atendimento 10!”
-        </p>
-        <p style="font-weight: bold; color: #333;">— Ana C., Tatuapé – SP</p>
+      <div class="depoimento">
+        <p>“Depois da instalação da Brasão, minha piscina ficou perfeita. Antes a gente evitava entrar por causa da água gelada, hoje virou parte da nossa rotina. Atendimento 10!”</p>
+        <strong>— Ana C., Tatuapé – SP</strong>
       </div>
 
-      <div style="background: #fff3e0; border-left: 5px solid #ff9800; padding: 20px; border-radius: 8px;">
-        <p style="font-size: 16px; line-height: 1.6;">
-          “Com o plano de redução da Brasão Aquecedores, consegui baixar em mais de 70% o custo mensal de aquecimento do meu hotel. Além da economia, agora ofereço conforto térmico aos hóspedes o ano todo.”
-        </p>
-        <p style="font-weight: bold; color: #333;">— Roberto G., Hotel Vila Azul – Riviera – SP</p>
+      <div class="depoimento">
+        <p>“Com o plano de redução da Brasão Aquecedores, consegui baixar em mais de 70% o custo mensal de aquecimento do meu hotel. Além da economia, agora ofereço conforto térmico aos hóspedes o ano todo.”</p>
+        <strong>— Roberto G., Hotel Vila Azul – Riviera – SP</strong>
       </div>
     </section>
-
-    <!-- Selo de garantia -->
-    <div style="text-align:center; margin-top: 40px;">
-      <img src="https://i.postimg.cc/fWmh4Xm8/selo-garantia.png" alt="Selo de Garantia 100% com Nota Fiscal" style="max-width:200px;">
-      <p style="margin-top: 10px; font-weight:bold; color:#2e7d32;">100% garantido com nota fiscal</p>
-    </div>
 
     <section class="section box" style="background:#f2f2f2;">
       <h2>Solicite seu Orçamento!</h2>
@@ -223,6 +225,9 @@
         <input type="text" id="litros" placeholder="Litros estimados (se souber)">
         <textarea id="observacoes" placeholder="Observações adicionais..." rows="4"></textarea>
         <button type="submit">SOLICITAR AGORA</button>
+        <p style="margin-top:20px; font-size:16px; font-weight:bold; color:#333; text-align:center;">
+          Instalação com <strong>garantia técnica</strong>, <strong>nota fiscal</strong> e <strong>equipe especializada</strong>. Atendemos com segurança e pontualidade.
+        </p>
       </form>
     </section>
 
@@ -256,7 +261,6 @@
   <script>
     document.getElementById('form-orcamento').addEventListener('submit', function(e) {
       e.preventDefault();
-
       const nome = document.getElementById('nome').value.trim();
       const whatsapp = document.getElementById('whatsapp').value.trim();
       const endereco = document.getElementById('endereco').value.trim();
@@ -266,7 +270,16 @@
       const litros = document.getElementById('litros').value.trim();
       const observacoes = document.getElementById('observacoes').value.trim();
 
-      const mensagem = `Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:\n\n🧍 Nome: ${nome}\n📞 WhatsApp: ${whatsapp}\n🏠 Endereço: ${endereco}\n📍 Bairro: ${bairro}\n📦 CEP: ${cep}\n📐 Medidas: ${medidas}\n💧 Litros: ${litros}\n📝 Observações: ${observacoes}`;
+      const mensagem = `Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:
+
+🧍 Nome: ${nome}
+📞 WhatsApp: ${whatsapp}
+🏠 Endereço: ${endereco}
+📍 Bairro: ${bairro}
+📦 CEP: ${cep}
+📐 Medidas da piscina: ${medidas}
+💧 Litros: ${litros}
+📝 Observações: ${observacoes}`;
 
       const url = `https://wa.me/5511989310235?text=${encodeURIComponent(mensagem)}`;
       window.open(url, '_blank');
