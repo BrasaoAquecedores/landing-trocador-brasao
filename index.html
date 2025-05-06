@@ -2,130 +2,31 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orçamento Imediato | Brasão Aquecedores</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #222;
-      margin: 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      padding: 20px 0;
-    }
-    header img {
-      height: 100px;
-    }
-    .hero {
-      background: #e0f7fa;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 24px;
-    }
-    .hero p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    .hero a {
-      background: #ff5722;
-      color: #fff;
-      padding: 15px 25px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      display: inline-block;
-    }
-    .section {
-      padding: 30px 20px;
-    }
-    .box {
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .fotos {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .fotos div {
-      text-align: center;
-    }
-    .fotos img {
-      width: 300px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    form button {
-      background: #ff5722;
-      color: white;
-      padding: 15px 25px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    .comparativo {
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    .comparativo ul {
-      list-style: none;
-      padding-left: 0;
-      flex: 1;
-      min-width: 200px;
-    }
-    .comparativo .bons::before {
-      content: "▣ ";
-      color: #555;
-    }
-    .comparativo .ruins::before {
-      content: "▢ ";
-      color: #999;
-    }
-    footer {
-      font-size: 13px;
-      text-align: center;
-      padding: 20px;
-      color: #555;
-    }
-    .whatsapp-fixed {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25d366;
-      color: #fff;
-      padding: 14px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      z-index: 1000;
-    }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #222; margin: 0; }
+    .container { max-width: 900px; margin: 0 auto; }
+    header { text-align: center; padding: 20px 0; }
+    header img { height: 100px; }
+    .hero { background: #e0f7fa; padding: 30px 20px; text-align: center; }
+    .hero h1 { font-size: 24px; }
+    .hero p { font-size: 16px; margin-bottom: 20px; }
+    .hero a { background: #ff5722; color: #fff; padding: 15px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    .section { padding: 30px 20px; }
+    .box { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 30px; }
+    h2 { text-align: center; margin-bottom: 20px; }
+    .fotos { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .fotos div { text-align: center; }
+    .fotos img { width: 300px; height: 250px; object-fit: cover; border-radius: 8px; }
+    form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; }
+    form button { background: #ff5722; color: white; padding: 15px 25px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+    .comparativo { display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+    .comparativo ul { list-style: none; padding-left: 0; flex: 1; min-width: 200px; }
+    .comparativo .bons::before { content: "▣ "; color: #555; }
+    .comparativo .ruins::before { content: "▢ "; color: #999; }
+    footer { font-size: 13px; text-align: center; padding: 20px; color: #555; }
+    .whatsapp-fixed { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: #fff; padding: 14px 20px; font-size: 16px; font-weight: bold; border-radius: 50px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.2); z-index: 1000; }
   </style>
 </head>
 <body>
@@ -137,13 +38,12 @@
     <section class="hero">
       <h1>Orçamento Imediato para Aquecimento de Piscina</h1>
       <p>Receba um orçamento com instalação profissional em até 24h. Atendemos toda São Paulo, litoral e interior com equipe própria.</p>
-      <a href="https://wa.me/5511989310235?text=Olá! Quero um orçamento rápido para aquecimento de piscina, por favor." target="_blank">FALAR COM ESPECIALISTA AGORA</a>
+      <a href="https://wa.me/5511989310235?text=Olá%2C+quero+um+orçamento+urgente+para+instalar+meu+aquecedor+de+piscina.+Vi+a+oferta+no+site+e+quero+garantir+agora." target="_blank">FALAR COM ESPECIALISTA AGORA</a>
     </section>
 
     <section class="section box">
       <h2>Quem Somos</h2>
-      <p>Somos a <strong>Brasão Aquecedores LTDA</strong>, empresa especializada em aquecimento de piscina com soluções que unem conforto térmico, economia real e instalação segura.</p>
-      <p>Atendemos condomínios, residências, chácaras, pousadas e clubes. Técnicos especializados com garantia e nota fiscal.</p>
+      <p>Somos a <strong>Brasão Aquecedores LTDA</strong>, empresa especializada em aquecimento de piscina com soluções que unem conforto térmico, economia real e instalação segura. Atuamos com foco em qualidade técnica e suporte imediato.</p>
     </section>
 
     <section class="section box">
@@ -186,9 +86,9 @@
       <div>
         <h3>Brasão Aquecedores</h3>
         <ul>
-          <li class="bons">Garantia com nota fiscal</li>
-          <li class="bons">Técnicos qualificados</li>
-          <li class="bons">Suporte imediato</li>
+          <li class="bons">Garantia real com nota fiscal</li>
+          <li class="bons">Instalação técnica certificada</li>
+          <li class="bons">Suporte imediato e pós-venda</li>
         </ul>
       </div>
       <div>
@@ -202,17 +102,16 @@
     </section>
 
     <footer>
-      Brasão Aquecedores LTDA – Loja Física: R. Pedro Bonilha, 119 – Piqueri – São Paulo/SP<br>
-      Autorizada das Maiores Marcas: Komeco, Rheem, Jelly-Fish, Heliotek, Sodramar, Industek.
+      Brasão Aquecedores LTDA – Loja Física: R. Pedro Bonilha, 119 Piqueri – São Paulo/SP<br>
+      Autorizada: Komeco, Rheem, Jelly-Fish, Heliotek, Sodramar, Industek e outras.
     </footer>
   </div>
 
-  <a href="https://wa.me/5511989310235?text=Olá! Quero um orçamento rápido para aquecimento de piscina, por favor." class="whatsapp-fixed" target="_blank">Fale no WhatsApp</a>
+  <a href="https://wa.me/5511989310235?text=Olá%2C+quero+um+atendimento+rápido+da+Brasão+Aquecedores%21" class="whatsapp-fixed" target="_blank">Fale no WhatsApp</a>
 
   <script>
     document.getElementById('form-orcamento').addEventListener('submit', function(e) {
       e.preventDefault();
-
       const nome = document.getElementById('nome').value.trim();
       const whatsapp = document.getElementById('whatsapp').value.trim();
       const endereco = document.getElementById('endereco').value.trim();
@@ -222,17 +121,17 @@
       const litros = document.getElementById('litros').value.trim();
       const observacoes = document.getElementById('observacoes').value.trim();
 
-      const mensagem = `Olá, gostaria de solicitar um orçamento para aquecimento de piscina:\n\n` +
-        `🧍 Nome: ${nome}\n` +
-        `📞 WhatsApp: ${whatsapp}\n` +
-        `🏠 Endereço: ${endereco}\n` +
-        `📍 Bairro: ${bairro}\n` +
-        `📦 CEP: ${cep}\n` +
-        `📐 Medidas: ${medidas}\n` +
-        `💧 Litros: ${litros}\n` +
-        `📝 Observações: ${observacoes}`;
+      const mensagem = `Olá, gostaria de solicitar um orçamento para aquecimento de piscina:%0A
+🧍 Nome: ${nome}%0A
+📞 WhatsApp: ${whatsapp}%0A
+🏠 Endereço: ${endereco}%0A
+📍 Bairro: ${bairro}%0A
+📦 CEP: ${cep}%0A
+📐 Medidas da piscina: ${medidas}%0A
+💧 Litros: ${litros}%0A
+📝 Observações: ${observacoes}`;
 
-      const url = `https://wa.me/5511989310235?text=${encodeURIComponent(mensagem)}`;
+      const url = `https://wa.me/5511989310235?text=${mensagem}`;
       window.open(url, '_blank');
     });
   </script>
