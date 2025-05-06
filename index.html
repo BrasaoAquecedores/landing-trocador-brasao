@@ -190,24 +190,41 @@
         — Roberto G., Hotel Vila Azul – Riviera – SP</p>
     </section>
 
-    <section class="section box" style="background:#f2f2f2;">
-      <h2>Solicite seu Orçamento!</h2>
-      <form action="enviar.php" method="POST">
-        <input type="text" name="nome" placeholder="Nome completo" required>
-        <input type="text" name="whatsapp" placeholder="WhatsApp com DDD" required>
-        <input type="email" name="email" placeholder="E-mail" required>
-        <input type="text" name="endereco" placeholder="Endereço completo" required>
-        <input type="text" name="bairro" placeholder="Cidade / Bairro">
-        <input type="text" name="cep" placeholder="CEP">
-        <input type="text" name="medidas" placeholder="Medidas da piscina (C x L x P)">
-        <input type="text" name="litros" placeholder="Litros estimados (se souber)">
-        <textarea name="observacoes" placeholder="Observações adicionais..." rows="4"></textarea>
-        <button type="submit">SOLICITAR AGORA</button>
-        <p style="margin-top:20px; font-size:16px; font-weight:bold; color:#333; text-align:center;">
-          Instalação com <strong>garantia técnica</strong>, <strong>nota fiscal</strong> e <strong>equipe especializada</strong>. Atendemos com segurança e pontualidade.
-        </p>
-      </form>
-    </section>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $to = "brasao.aquecedores@gmail.com";
+    $subject = "Novo orçamento pelo site";
+
+    $nome = $_POST["nome"];
+    $whatsapp = $_POST["whatsapp"];
+    $endereco = $_POST["endereco"];
+    $bairro = $_POST["bairro"];
+    $cep = $_POST["cep"];
+    $medidas = $_POST["medidas"];
+    $litros = $_POST["litros"];
+    $observacoes = $_POST["observacoes"];
+
+    $mensagem = "Nome: $nome\n";
+    $mensagem .= "WhatsApp: $whatsapp\n";
+    $mensagem .= "Endereço: $endereco\n";
+    $mensagem .= "Cidade/Bairro: $bairro\n";
+    $mensagem .= "CEP: $cep\n";
+    $mensagem .= "Medidas da piscina: $medidas\n";
+    $mensagem .= "Litros estimados: $litros\n";
+    $mensagem .= "Observações adicionais: $observacoes\n";
+
+    $headers = "From: brasao.aquecedores@gmail.com\r\n";
+    $headers .= "Reply-To: brasao.aquecedores@gmail.com\r\n";
+
+    if (mail($to, $subject, $mensagem, $headers)) {
+        header("Location: https://wa.me/5511962525073?text=Ol%C3%A1!+Acabei+de+preencher+o+formul%C3%A1rio+no+site+e+gostaria+de+solicitar+meu+or%C3%A7amento.");
+        exit();
+    } else {
+        echo "<h3>Erro ao enviar. Tente novamente mais tarde.</h3>";
+    }
+}
+?>
+
 
     <section class="section box comparativo">
       <div>
