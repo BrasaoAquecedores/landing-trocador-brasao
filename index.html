@@ -157,7 +157,7 @@
     <section class="hero">
       <h1>Orçamento Imediato para Aquecimento de Piscina</h1>
       <p>Receba um orçamento com instalação profissional em até 24h. Atendemos toda São Paulo, litoral e interior com equipe própria.</p>
-      <a href="https://wa.me/5511989310235" target="_blank">FALAR COM ESPECIALISTA AGORA</a>
+      <a href="https://wa.me/5511989310235?text=Olá, tenho interesse em um orçamento para aquecimento de piscina." target="_blank">FALAR COM ESPECIALISTA AGORA</a>
     </section>
 
     <section class="section box">
@@ -190,62 +190,23 @@
         — Roberto G., Hotel Vila Azul – Riviera – SP</p>
     </section>
 
-  <form onsubmit="enviarWhatsApp(); return false;">
-  <input type="text" id="nome" placeholder="Nome completo" required>
-  <input type="text" id="whatsapp" placeholder="WhatsApp com DDD" required>
-  <input type="text" id="endereco" placeholder="Endereço completo" required>
-  <input type="text" id="bairro" placeholder="Cidade / Bairro">
-  <input type="text" id="cep" placeholder="CEP">
-  <input type="text" id="medidas" placeholder="Medidas da piscina (C x L x P)">
-  <input type="text" id="litros" placeholder="Litros estimados (se souber)">
-  <textarea id="observacoes" placeholder="Observações adicionais..." rows="4"></textarea>
-  <button type="submit">SOLICITAR AGORA</button>
-</form>
-
-<script>
- <form onsubmit="enviarWhatsApp(); return false;">
-  <input type="text" id="nome" placeholder="Nome completo" required>
-  <input type="text" id="whatsapp" placeholder="WhatsApp com DDD" required>
-  <input type="text" id="endereco" placeholder="Endereço completo" required>
-  <input type="text" id="bairro" placeholder="Cidade / Bairro">
-  <input type="text" id="cep" placeholder="CEP">
-  <input type="text" id="medidas" placeholder="Medidas da piscina (C x L x P)">
-  <input type="text" id="litros" placeholder="Litros estimados (se souber)">
-  <textarea id="observacoes" placeholder="Observações adicionais..." rows="4"></textarea>
-  <button type="submit">SOLICITAR AGORA</button>
-  <p style="margin-top:20px; font-size:16px; font-weight:bold; color:#333; text-align:center;">
-    Instalação com <strong>garantia técnica</strong>, <strong>nota fiscal</strong> e <strong>equipe especializada</strong>. Atendemos com segurança e pontualidade.
-  </p>
-</form>
-
-<script>
-  function enviarWhatsApp() {
-    const nome = document.getElementById('nome').value.trim();
-    const whatsapp = document.getElementById('whatsapp').value.trim();
-    const endereco = document.getElementById('endereco').value.trim();
-    const bairro = document.getElementById('bairro').value.trim();
-    const cep = document.getElementById('cep').value.trim();
-    const medidas = document.getElementById('medidas').value.trim();
-    const litros = document.getElementById('litros').value.trim();
-    const observacoes = document.getElementById('observacoes').value.trim();
-
-    const mensagem = `Olá, gostaria de solicitar um orçamento para aquecimento de piscina:
-
-🧍 Nome: ${nome}
-📞 WhatsApp: ${whatsapp}
-🏠 Endereço: ${endereco}
-📍 Bairro: ${bairro}
-📦 CEP: ${cep}
-📐 Medidas da piscina: ${medidas}
-💧 Litros: ${litros}
-📝 Observações: ${observacoes}`;
-
-    const numero = "5511989310235";
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-    window.open(url, '_blank');
-  }
-</script>
-
+    <section class="section box" style="background:#f2f2f2;">
+      <h2>Solicite seu Orçamento!</h2>
+      <form id="form-orcamento">
+        <input type="text" id="nome" placeholder="Nome completo" required>
+        <input type="text" id="whatsapp" placeholder="WhatsApp com DDD" required>
+        <input type="text" id="endereco" placeholder="Endereço completo" required>
+        <input type="text" id="bairro" placeholder="Cidade / Bairro">
+        <input type="text" id="cep" placeholder="CEP">
+        <input type="text" id="medidas" placeholder="Medidas da piscina (C x L x P)">
+        <input type="text" id="litros" placeholder="Litros estimados (se souber)">
+        <textarea id="observacoes" placeholder="Observações adicionais..." rows="4"></textarea>
+        <button type="submit">SOLICITAR AGORA</button>
+        <p style="margin-top:20px; font-size:16px; font-weight:bold; color:#333; text-align:center;">
+          Instalação com <strong>garantia técnica</strong>, <strong>nota fiscal</strong> e <strong>equipe especializada</strong>. Atendemos com segurança e pontualidade.
+        </p>
+      </form>
+    </section>
 
     <section class="section box comparativo">
       <div>
@@ -271,6 +232,41 @@
       Autorizada das Maiores Marcas do Brasil: <span style="font-weight:bold; color:#007bff">Komeco</span>, <span style="font-weight:bold; color:#007bff">Rheem</span>, <span style="font-weight:bold; color:#007bff">Jelly-Fish</span>, <span style="font-weight:bold; color:#007bff">Heliotek</span>, <span style="font-weight:bold; color:#007bff">Sodramar</span>, <span style="font-weight:bold; color:#007bff">Industek</span> e outras.
     </footer>
   </div>
+
+  <a href="https://wa.me/5511989310235" class="whatsapp-fixed" target="_blank">Fale no WhatsApp</a>
+
+  <script>
+    document.getElementById('form-orcamento').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value.trim();
+      const whatsapp = document.getElementById('whatsapp').value.trim();
+      const endereco = document.getElementById('endereco').value.trim();
+      const bairro = document.getElementById('bairro').value.trim();
+      const cep = document.getElementById('cep').value.trim();
+      const medidas = document.getElementById('medidas').value.trim();
+      const litros = document.getElementById('litros').value.trim();
+      const observacoes = document.getElementById('observacoes').value.trim();
+
+      const mensagem = `Olá, gostaria de solicitar um orçamento para aquecimento de piscina:
+
+🧍 Nome: ${nome}
+📞 WhatsApp: ${whatsapp}
+🏠 Endereço: ${endereco}
+📍 Bairro: ${bairro}
+📦 CEP: ${cep}
+📐 Medidas da piscina: ${medidas}
+💧 Litros: ${litros}
+📝 Observações: ${observacoes}`;
+
+      const numero = "5511989310235";
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+</html>
+
 
   <a href="https://wa.me/5511989310235" class="whatsapp-fixed" target="_blank">Fale no WhatsApp</a>
 </body>
