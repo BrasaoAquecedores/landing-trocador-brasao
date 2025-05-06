@@ -192,15 +192,16 @@
 
     <section class="section box" style="background:#f2f2f2;">
       <h2>Solicite seu Orçamento!</h2>
-      <form action="https://wa.me/5511989310235" method="get" target="_blank">
+      <form action="enviar.php" method="POST">
         <input type="text" name="nome" placeholder="Nome completo" required>
         <input type="text" name="whatsapp" placeholder="WhatsApp com DDD" required>
-        <input type="text" name="endereço" placeholder="Endereço completo" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="text" name="endereco" placeholder="Endereço completo" required>
         <input type="text" name="bairro" placeholder="Cidade / Bairro">
         <input type="text" name="cep" placeholder="CEP">
         <input type="text" name="medidas" placeholder="Medidas da piscina (C x L x P)">
         <input type="text" name="litros" placeholder="Litros estimados (se souber)">
-        <textarea name="obs" placeholder="Observações adicionais..." rows="4"></textarea>
+        <textarea name="observacoes" placeholder="Observações adicionais..." rows="4"></textarea>
         <button type="submit">SOLICITAR AGORA</button>
         <p style="margin-top:20px; font-size:16px; font-weight:bold; color:#333; text-align:center;">
           Instalação com <strong>garantia técnica</strong>, <strong>nota fiscal</strong> e <strong>equipe especializada</strong>. Atendemos com segurança e pontualidade.
@@ -236,4 +237,3 @@
   <a href="https://wa.me/5511989310235" class="whatsapp-fixed" target="_blank">Fale no WhatsApp</a>
 </body>
 </html>
-
