@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -12,6 +12,9 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-17026663599');
+
+    // Snippet de conversão para a página de Contato (rastreio imediato)
+    gtag('event', 'conversion', {'send_to': 'AW-17026663599/cBjmCP7mj8MaEK-J-bY_'});
   </script>
 
   <style>
@@ -156,13 +159,93 @@
 </head>
 <body>
   <div class="container">
-    <!-- (seções anteriores coladas) -->
+    <header>
+      <img src="https://i.postimg.cc/dQ7MxMs7/3.png" alt="Brasão Aquecedores">
+    </header>
+
+    <section class="hero">
+      <h1>Orçamento Imediato para Aquecimento de Piscina</h1>
+      <p>Receba um orçamento com instalação profissional em até 24h. Atendemos toda São Paulo, litoral e interior com equipe própria.</p>
+      <a href="https://wa.me/5511989310235?text=Olá! Tenho interesse em um orçamento completo com instalação técnica. Pode me ajudar?" target="_blank">FALAR COM ESPECIALISTA AGORA</a>
+    </section>
+
+    <section class="section box">
+      <h2>Quem Somos</h2>
+      <p>Somos a <strong>Brasão Aquecedores LTDA</strong>, empresa especializada em aquecimento de piscina com soluções que unem conforto térmico, economia real e instalação segura. Atuamos com foco em qualidade técnica e suporte imediato.</p>
+      <p>Entregamos soluções sob medida, com garantia e nota fiscal, atendendo condomínios, residências, chácaras, pousadas e clubes. Nossos técnicos passam por atualização contínua para oferecer o melhor resultado sem dor de cabeça.</p>
+    </section>
+
+    <section class="section box">
+      <h2>Antes e Depois</h2>
+      <div class="fotos">
+        <div><img src="https://i.postimg.cc/BnXRCHhF/2.jpg" alt="Antes"><p><strong>ANTES</strong></p></div>
+        <div><img src="https://i.postimg.cc/x8ptkFV4/1.jpg" alt="Depois"><p><strong>DEPOIS</strong></p></div>
+      </div>
+    </section>
+
+    <section class="section box">
+      <h2>Depoimentos Reais</h2>
+      <div class="depoimento">
+        <p>“Sou técnico em aquecedores a gás. Quando comprei meu trocador de calor, recebi orientação da Komeco para não instalar por conta própria e procurar a Brasão. Atendimento técnico, com garantia e confiança.”</p>
+        <strong>— Marcos T., Ilha Comprida – SP</strong>
+      </div>
+      <div class="depoimento">
+        <p>“Depois da instalação da Brasão, minha piscina ficou perfeita. Antes a gente evitava entrar por causa da água gelada, hoje virou parte da nossa rotina. Atendimento 10!”</p>
+        <strong>— Ana C., Tatuapé – SP</strong>
+      </div>
+      <div class="depoimento">
+        <p>“Com o plano de redução da Brasão Aquecedores, consegui baixar em mais de 70% o custo mensal de aquecimento do meu hotel. Além da economia, agora ofereço conforto térmico aos hóspedes o ano todo.”</p>
+        <strong>— Roberto G., Hotel Vila Azul – Riviera – SP</strong>
+      </div>
+    </section>
+
+    <section class="section box" style="background:#f2f2f2;">
+      <h2>Solicite seu Orçamento!</h2>
+      <form id="form-orcamento">
+        <input type="text" id="nome" placeholder="Nome completo" required>
+        <input type="text" id="whatsapp" placeholder="WhatsApp com DDD" required>
+        <input type="text" id="endereco" placeholder="Endereço completo" required>
+        <input type="text" id="bairro" placeholder="Cidade / Bairro">
+        <input type="text" id="cep" placeholder="CEP">
+        <input type="text" id="medidas" placeholder="Medidas da piscina (C x L x P)">
+        <input type="text" id="litros" placeholder="Litros estimados (se souber)">
+        <textarea id="observacoes" placeholder="Observações adicionais..." rows="4"></textarea>
+        <button type="submit">SOLICITAR AGORA</button>
+        <img src="https://i.postimg.cc/Vv5bjfnW/3.png" alt="Selo de Garantia" class="selo">
+        <p style="margin-top:10px; font-size:16px; font-weight:bold; color:#333; text-align:center;">
+          Instalação com <strong>garantia técnica</strong>, <strong>nota fiscal</strong> e <strong>equipe especializada</strong>. Atendemos com segurança e pontualidade.
+        </p>
+      </form>
+    </section>
+
+    <section class="section box comparativo">
+      <div>
+        <h3>Brasão Aquecedores</h3>
+        <ul>
+          <li class="bons">Garantia real com nota fiscal</li>
+          <li class="bons">Instalação técnica certificada</li>
+          <li class="bons">Suporte imediato e pós-venda</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Outros Vendedores</h3>
+        <ul>
+          <li class="ruins">Sem garantia</li>
+          <li class="ruins">Instalação por conta própria</li>
+          <li class="ruins">Sem suporte técnico</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      Brasão Aquecedores LTDA – Loja Física: R. Pedro Bonilha, 119 Piqueri – São Paulo/SP<br>
+      <a href="https://brasaoaquecedores.com.br/assistencia-tecnica-aquecedores/" target="_blank">brasaoaquecedores.com.br</a> |
+      <a href="https://instagram.com/brasao_aquecedores" target="_blank">@brasao_aquecedores</a><br>
+      Autorizada das Maiores Marcas do Brasil: <span style="font-weight:bold; color:#007bff">Komeco</span>, <span style="font-weight:bold; color:#007bff">Rheem</span>, <span style="font-weight:bold; color:#007bff">Jelly-Fish</span>, <span style="font-weight:bold; color:#007bff">Heliotek</span>, <span style="font-weight:bold; color:#007bff">Sodramar</span>, <span style="font-weight:bold; color:#007bff">Industek</span>.
+    </footer>
   </div>
 
-  <a href="https://wa.me/5511989310235?text=Olá! Vi a página da Brasão Aquecedores e quero um orçamento rápido!"
-     class="whatsapp-fixed"
-     onclick="gtag('event', 'conversion', {'send_to': 'AW-17026663599'});"
-     target="_blank">Fale no WhatsApp</a>
+  <a href="https://wa.me/5511989310235?text=Olá! Vi a página da Brasão Aquecedores e quero um orçamento rápido!" class="whatsapp-fixed" target="_blank">Fale no WhatsApp</a>
 
   <script>
     document.getElementById('form-orcamento').addEventListener('submit', function(e) {
@@ -176,9 +259,8 @@
       const litros = document.getElementById('litros').value.trim();
       const observacoes = document.getElementById('observacoes').value.trim();
 
-      const mensagem = `Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:\n\n🧍 Nome: ${nome}\n📞 WhatsApp: ${whatsapp}\n🏠 Endereço: ${endereco}\n📍 Bairro: ${bairro}\n📦 CEP: ${cep}\n📐 Medidas: ${medidas}\n💧 Litros: ${litros}\n📝 Observações: ${observacoes}`;
-      const url = `https://wa.me/5511989310235?text=${encodeURIComponent(mensagem)}`;
-      gtag('event', 'conversion', {'send_to': 'AW-17026663599'});
+      const mensagem = Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:\n\n🧍 Nome: ${nome}\n📞 WhatsApp: ${whatsapp}\n🏠 Endereço: ${endereco}\n📍 Bairro: ${bairro}\n📦 CEP: ${cep}\n📐 Medidas: ${medidas}\n💧 Litros: ${litros}\n📝 Observações: ${observacoes};
+      const url = https://wa.me/5511989310235?text=${encodeURIComponent(mensagem)};
       window.open(url, '_blank');
     });
   </script>
