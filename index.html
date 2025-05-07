@@ -4,6 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orçamento Imediato | Brasão Aquecedores</title>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,36 +22,29 @@
       color: #222;
       margin: 0;
     }
-
     .container {
       max-width: 900px;
       margin: 0 auto;
     }
-
     header {
       text-align: center;
       padding: 20px 0;
     }
-
     header img {
       height: 100px;
     }
-
     .hero {
       background: #e0f7fa;
       padding: 30px 20px;
       text-align: center;
     }
-
     .hero h1 {
       font-size: 24px;
     }
-
     .hero p {
       font-size: 16px;
       margin-bottom: 20px;
     }
-
     .hero a {
       background: #ff5722;
       color: #fff;
@@ -49,11 +53,9 @@
       border-radius: 5px;
       font-weight: bold;
     }
-
     .section {
       padding: 30px 20px;
     }
-
     .box {
       background: #fff;
       padding: 25px;
@@ -61,30 +63,25 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       margin-bottom: 30px;
     }
-
     h2 {
       text-align: center;
       margin-bottom: 20px;
     }
-
     .fotos {
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
     }
-
     .fotos div {
       text-align: center;
     }
-
     .fotos img {
       width: 300px;
       height: 250px;
       object-fit: cover;
       border-radius: 8px;
     }
-
     .depoimento {
       background: #e3f2fd;
       border-left: 4px solid #2196f3;
@@ -92,19 +89,16 @@
       margin-bottom: 20px;
       border-radius: 8px;
     }
-
     .depoimento strong {
       color: #1976d2;
       display: block;
       margin-top: 10px;
     }
-
     form input, form textarea {
       width: 100%;
       padding: 10px;
       margin-bottom: 10px;
     }
-
     form button {
       background: #ff5722;
       color: white;
@@ -114,38 +108,32 @@
       font-weight: bold;
       cursor: pointer;
     }
-
     .comparativo {
       display: flex;
       justify-content: space-between;
       gap: 40px;
       flex-wrap: wrap;
     }
-
     .comparativo ul {
       list-style: none;
       padding-left: 0;
       flex: 1;
       min-width: 200px;
     }
-
     .comparativo .bons::before {
       content: "▣ ";
       color: #555;
     }
-
     .comparativo .ruins::before {
       content: "▢ ";
       color: #999;
     }
-
     footer {
       font-size: 13px;
       text-align: center;
       padding: 20px;
       color: #555;
     }
-
     .whatsapp-fixed {
       position: fixed;
       bottom: 20px;
@@ -163,6 +151,11 @@
   </style>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <div class="container">
     <header>
       <img src="https://i.postimg.cc/dQ7MxMs7/3.png" alt="Brasão Aquecedores">
@@ -176,21 +169,14 @@
 
     <section class="section box">
       <h2>Quem Somos</h2>
-      <p>Somos a <strong>Brasão Aquecedores LTDA</strong>, empresa especializada em aquecimento de piscina com soluções que unem conforto térmico, economia real e instalação segura. Atuamos com foco em qualidade técnica e suporte imediato.</p>
-      <p>Entregamos soluções sob medida, com garantia e nota fiscal, atendendo condomínios, residências, chácaras, pousadas e clubes. Nossos técnicos passam por atualização contínua para oferecer o melhor resultado sem dor de cabeça.</p>
+      <p>Somos a <strong>Brasão Aquecedores LTDA</strong>, empresa especializada em aquecimento de piscina com soluções que unem conforto térmico, economia real e instalação segura.</p>
     </section>
 
     <section class="section box">
       <h2>Antes e Depois</h2>
       <div class="fotos">
-        <div>
-          <img src="https://i.postimg.cc/BnXRCHhF/2.jpg" alt="Antes">
-          <p><strong>ANTES</strong></p>
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/x8ptkFV4/1.jpg" alt="Depois">
-          <p><strong>DEPOIS</strong></p>
-        </div>
+        <div><img src="https://i.postimg.cc/BnXRCHhF/2.jpg" alt="Antes"><p><strong>ANTES</strong></p></div>
+        <div><img src="https://i.postimg.cc/x8ptkFV4/1.jpg" alt="Depois"><p><strong>DEPOIS</strong></p></div>
       </div>
     </section>
 
@@ -270,7 +256,17 @@
       const litros = document.getElementById('litros').value.trim();
       const observacoes = document.getElementById('observacoes').value.trim();
 
-      const mensagem = `Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:\n\n🧍 Nome: ${nome}\n📞 WhatsApp: ${whatsapp}\n🏠 Endereço: ${endereco}\n📍 Bairro: ${bairro}\n📦 CEP: ${cep}\n📐 Medidas: ${medidas}\n💧 Litros: ${litros}\n📝 Observações: ${observacoes}`;
+      const mensagem = `Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:
+
+🧍 Nome: ${nome}
+📞 WhatsApp: ${whatsapp}
+🏠 Endereço: ${endereco}
+📍 Bairro: ${bairro}
+📦 CEP: ${cep}
+📐 Medidas da piscina: ${medidas}
+💧 Litros: ${litros}
+📝 Observações: ${observacoes}`;
+
       const url = `https://wa.me/5511989310235?text=${encodeURIComponent(mensagem)}`;
       window.open(url, '_blank');
     });
