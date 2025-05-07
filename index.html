@@ -165,7 +165,7 @@
 <body>
   <div class="container">
     <header>
-      <img src="https://i.postimg.cc/Dz1Hw5cw/logo-brasao-atualizada.png" alt="Brasão Aquecedores" style="height: 100px;">
+      <img src="https://i.postimg.cc/4NJdcNbC/3.jpg" alt="Brasão Aquecedores">
     </header>
 
     <section class="hero">
@@ -270,17 +270,7 @@
       const litros = document.getElementById('litros').value.trim();
       const observacoes = document.getElementById('observacoes').value.trim();
 
-      const mensagem = `Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:
-
-🧍 Nome: ${nome}
-📞 WhatsApp: ${whatsapp}
-🏠 Endereço: ${endereco}
-📍 Bairro: ${bairro}
-📦 CEP: ${cep}
-📐 Medidas da piscina: ${medidas}
-💧 Litros: ${litros}
-📝 Observações: ${observacoes}`;
-
+      const mensagem = `Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:\n\n🧍 Nome: ${nome}\n📞 WhatsApp: ${whatsapp}\n🏠 Endereço: ${endereco}\n📍 Bairro: ${bairro}\n📦 CEP: ${cep}\n📐 Medidas: ${medidas}\n💧 Litros: ${litros}\n📝 Observações: ${observacoes}`;
       const url = `https://wa.me/5511989310235?text=${encodeURIComponent(mensagem)}`;
       window.open(url, '_blank');
     });
