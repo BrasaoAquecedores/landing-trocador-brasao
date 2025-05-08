@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orçamento Imediato | Brasão Aquecedores</title>
+  <title>Orçamento Trocador de Calor | Instalação em 24h | Brasão Aquecedores</title>
+  <meta name="description" content="Receba orçamento imediato para instalação de trocador de calor com nota fiscal, garantia e equipe especializada. Atendemos SP, litoral e interior.">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17026663599"></script>
@@ -12,8 +13,6 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-17026663599');
-
-    // Snippet de conversão para a página de Contato (rastreio imediato)
     gtag('event', 'conversion', {'send_to': 'AW-17026663599/cBjmCP7mj8MaEK-J-bY_'});
   </script>
 
@@ -166,7 +165,7 @@
     <section class="hero">
       <h1>Orçamento Imediato para Aquecimento de Piscina</h1>
       <p>Receba um orçamento com instalação profissional em até 24h. Atendemos toda São Paulo, litoral e interior com equipe própria.</p>
-      <a href="https://wa.me/5511989310235?text=Olá! Tenho interesse em um orçamento completo com instalação técnica. Pode me ajudar?" target="_blank">FALAR COM ESPECIALISTA AGORA</a>
+      <a href="https://wa.me/5511989310235?text=Olá! Tenho interesse em um orçamento completo com instalação técnica. Pode me ajudar?" target="_blank" rel="noopener">FALAR COM ESPECIALISTA AGORA</a>
     </section>
 
     <section class="section box">
@@ -239,13 +238,13 @@
 
     <footer>
       Brasão Aquecedores LTDA – Loja Física: R. Pedro Bonilha, 119 Piqueri – São Paulo/SP<br>
-      <a href="https://brasaoaquecedores.com.br/assistencia-tecnica-aquecedores/" target="_blank">brasaoaquecedores.com.br</a> |
-      <a href="https://instagram.com/brasao_aquecedores" target="_blank">@brasao_aquecedores</a><br>
+      <a href="https://brasaoaquecedores.com.br/assistencia-tecnica-aquecedores/" target="_blank" rel="noopener">brasaoaquecedores.com.br</a> |
+      <a href="https://instagram.com/brasao_aquecedores" target="_blank" rel="noopener">@brasao_aquecedores</a><br>
       Autorizada das Maiores Marcas do Brasil: <span style="font-weight:bold; color:#007bff">Komeco</span>, <span style="font-weight:bold; color:#007bff">Rheem</span>, <span style="font-weight:bold; color:#007bff">Jelly-Fish</span>, <span style="font-weight:bold; color:#007bff">Heliotek</span>, <span style="font-weight:bold; color:#007bff">Sodramar</span>, <span style="font-weight:bold; color:#007bff">Industek</span>.
     </footer>
   </div>
 
-  <a href="https://wa.me/5511989310235?text=Olá! Vi a página da Brasão Aquecedores e quero um orçamento rápido!" class="whatsapp-fixed" target="_blank">Fale no WhatsApp</a>
+  <a href="https://wa.me/5511989310235?text=Olá! Vi a página da Brasão Aquecedores e quero um orçamento rápido!" class="whatsapp-fixed" target="_blank" rel="noopener">Fale no WhatsApp</a>
 
   <script>
     document.getElementById('form-orcamento').addEventListener('submit', function(e) {
@@ -259,8 +258,8 @@
       const litros = document.getElementById('litros').value.trim();
       const observacoes = document.getElementById('observacoes').value.trim();
 
-      const mensagem = Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:\n\n🧍 Nome: ${nome}\n📞 WhatsApp: ${whatsapp}\n🏠 Endereço: ${endereco}\n📍 Bairro: ${bairro}\n📦 CEP: ${cep}\n📐 Medidas: ${medidas}\n💧 Litros: ${litros}\n📝 Observações: ${observacoes};
-      const url = https://wa.me/5511989310235?text=${encodeURIComponent(mensagem)};
+      const mensagem = `Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:\n\n🧍 Nome: ${nome}\n📞 WhatsApp: ${whatsapp}\n🏠 Endereço: ${endereco}\n📍 Bairro: ${bairro}\n📦 CEP: ${cep}\n📐 Medidas: ${medidas}\n💧 Litros: ${litros}\n📝 Observações: ${observacoes}`;
+      const url = `https://wa.me/5511989310235?text=${encodeURIComponent(mensagem)}`;
       window.open(url, '_blank');
     });
   </script>
