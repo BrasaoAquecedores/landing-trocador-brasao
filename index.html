@@ -13,7 +13,6 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-17026663599');
-    gtag('event', 'conversion', {'send_to': 'AW-17026663599/cBjmCP7mj8MaEK-J-bY_'});
   </script>
 
   <style>
@@ -165,7 +164,7 @@
     <section class="hero">
       <h1>Orçamento Imediato para Aquecimento de Piscina</h1>
       <p>Receba um orçamento com instalação profissional em até 24h. Atendemos toda São Paulo, litoral e interior com equipe própria.</p>
-      <a href="https://wa.me/5511989310235?text=Olá! Tenho interesse em um orçamento completo com instalação técnica. Pode me ajudar?" target="_blank" rel="noopener">FALAR COM ESPECIALISTA AGORA</a>
+      <a href="https://wa.me/5511989310235?text=Olá! Tenho interesse em um orçamento completo com instalação técnica. Pode me ajudar?" target="_blank" rel="noopener" onclick="rastrearConversao()">FALAR COM ESPECIALISTA AGORA</a>
     </section>
 
     <section class="section box">
@@ -244,9 +243,17 @@
     </footer>
   </div>
 
-  <a href="https://wa.me/5511989310235?text=Olá! Vi a página da Brasão Aquecedores e quero um orçamento rápido!" class="whatsapp-fixed" target="_blank" rel="noopener">Fale no WhatsApp</a>
+  <a href="https://wa.me/5511989310235?text=Olá! Vi a página da Brasão Aquecedores e quero um orçamento rápido!" 
+     class="whatsapp-fixed" 
+     target="_blank" 
+     rel="noopener" 
+     onclick="rastrearConversao()">Fale no WhatsApp</a>
 
   <script>
+    function rastrearConversao() {
+      gtag('event', 'conversion', {'send_to': 'AW-17026663599/cBjmCP7mj8MaEK-J-bY_'});
+    }
+
     document.getElementById('form-orcamento').addEventListener('submit', function(e) {
       e.preventDefault();
       const nome = document.getElementById('nome').value.trim();
@@ -260,6 +267,9 @@
 
       const mensagem = `Olá! Gostaria de solicitar um orçamento completo para aquecimento de piscina:\n\n🧍 Nome: ${nome}\n📞 WhatsApp: ${whatsapp}\n🏠 Endereço: ${endereco}\n📍 Bairro: ${bairro}\n📦 CEP: ${cep}\n📐 Medidas: ${medidas}\n💧 Litros: ${litros}\n📝 Observações: ${observacoes}`;
       const url = `https://wa.me/5511989310235?text=${encodeURIComponent(mensagem)}`;
+
+      rastrearConversao(); // Só dispara se a pessoa envia
+
       window.open(url, '_blank');
     });
   </script>
